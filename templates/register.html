@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration (Sign Up)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #d41e06, #908cd7);
+        }
+
+        .register-container {
+            background: #380ecf;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .register-container h2 {
+            text-align: center;
+            margin-bottom: 24px;
+            color: #333333;
+        }
+
+        .input-group {
+            margin-bottom: 18px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 6px;
+            color: #555555;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cccccc;
+            border-radius: 6px;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .input-group input:focus {
+            border-color: #06b6d4;
+            box-shadow: 0 0 5px rgba(6, 182, 212, 0.3);
+        }
+
+        .terms {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 24px;
+            font-size: 14px;
+            color: #555555;
+        }
+
+        .register-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #06b6d4;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .register-btn:hover {
+            background-color: #0891b2;
+        }
+
+        .login-text {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666666;
+        }
+
+        .login-text a {
+            color: #4f46e5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="register-container">
+        <h2>New Account</h2>
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="fullname">Full name</label>
+                <input type="text" id="fullname" placeholder="Enter name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email ID</label>
+                <input type="email" id="email" placeholder="Enter Email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Creat a strong password" required>
+            </div>
+
+            <div class="input-group">
+                <label for="confirm-password">Cofirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Enter confirm password" required>
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I agree to the terms and conditions</label>
+            </div>
+
+            <button type="submit" class="register-btn">Register(Register)</button>
+
+
+            <p class="login-text">Already have an account <a href="login.html">Login</a></p>
+        </form>
+    </div>
+
+</body>
+
+</html>
